@@ -1,0 +1,101 @@
+
+body {
+    background-color: #ecf0f1;
+    background:url(flowers-276014_960_720.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:200%;
+    animation:slide 25s infinite;
+}
+/* set of rules from-0 to-100*/
+@keyframes slide{
+  20%{
+    background:url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200%;
+  }
+  50%{
+    background:url(https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200%;
+  }
+  75%{
+    background:url(https://w0.peakpx.com/wallpaper/489/891/HD-wallpaper-natural-mirror-view-sky-clouds-lake-mirrored-mountain-purple-flowers-nature.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  height:200%;
+  }
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #fff;
+    width:50%;
+    margin:auto;
+    /* height:600px; */
+    padding: 2px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+}
+.gallery-item{
+    flex-basis:32.7%;
+    /* display: flex; */
+    padding:2px;
+    opacity:0.85;
+}
+.gallery-item:hover{
+    opacity:1;  
+    box-shadow: 3px 3px 3px 0px brown;
+  
+}
+.gallery-item img{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+
+    /* object-fit: cover; */
+
+}
+.lightbox{
+    position:fixed;
+    display:none;
+    background-color: rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    overflow: auto;
+
+    top:0;
+    left:0;
+}
+.lightbox-content{
+    position:relative;
+    width:20%;
+    height: 100%;
+    margin: 4% 35%;
+    /* margin-top:100px; */
+}
+.lightbox-content img{
+    width:150%;
+    height:85%;
+    border:6px solid greenyellow;
+    object-fit:cover;
+}
+.lightbox-prev{
+    position:absolute;
+    background-color:black;
+    color:#fff;
+    padding:10px;
+    top:40%;
+    cursor:pointer;
+}
+.lightbox-next{
+    position:absolute;
+    background-color: black;
+    color:#fff;
+    padding:10px;
+    top:35%;
+    margin:  40 148%;
+    cursor:pointer;
+}
