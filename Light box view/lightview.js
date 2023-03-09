@@ -32,9 +32,9 @@ function currentImage(){
   let imageIndex=parseInt(this.getAttribute("data-index"));
   showLightBox(imageIndex);  
 }
-for(let i=0;i<galleryItem.length;i++)
+for(let value of galleryItem)
 {
-    galleryItem[i].addEventListener("click",currentImage);
+    value.addEventListener("click",currentImage);
 }
 function sliderImage(n)
 {
