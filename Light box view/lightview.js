@@ -38,7 +38,8 @@ for(let value of galleryItem)
 }
 function sliderImage(n)
 {
-    showLightBox(index+=n);
+    index+=n
+    showLightBox(index);
 }
 function prevImage(){
     sliderImage(-1);
