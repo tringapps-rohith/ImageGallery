@@ -30,6 +30,7 @@ function showLightBox(n)
 function currentImage(){
   lightBox.style.display="block";
   let imageIndex=parseInt(this.getAttribute("data-index"));
+    index=imageIndex;
   showLightBox(imageIndex);  
 }
 for(let value of galleryItem)
